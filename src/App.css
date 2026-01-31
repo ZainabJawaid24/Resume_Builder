@@ -1,0 +1,192 @@
+/* --------------------------- */
+/* Global Neon Dark Theme */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg,
+            rgba(15, 15, 20, 0.95),
+            rgba(10, 10, 15, 0.95)),
+        url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80");
+  background-position: center;
+  background-size: cover;      
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00fff7;
+  transition: all 0.3s ease;
+}
+
+/* --------------------------- */
+/* Container */
+.container {
+  background: rgba(10,10,10,0.9);
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #00fff7, 0 0 40px #ff00ff, 0 0 60px #00fff7;
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* --------------------------- */
+/* Headings */
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-shadow: 0 0 5px #00fff7, 0 0 10px #ff00ff;
+  color: #00fff7;
+}
+
+/* --------------------------- */
+/* Inputs & Textareas */
+input, textarea {
+  width: 100%;
+  padding: 14px 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 2px solid #00fff7;
+  background: #111;
+  color: #00fff7;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #ff00ff;
+  box-shadow: 0 0 10px #00fff7, 0 0 20px #ff00ff;
+}
+
+/* --------------------------- */
+/* Buttons */
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff00ff, #00fff7);
+  color: #000;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #ff00ff, 0 0 20px #00fff7;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px #ff00ff, 0 0 40px #00fff7, 0 0 60px #ff00ff;
+}
+
+/* --------------------------- */
+/* Links */
+p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+a {
+  color: #ff00ff;
+  font-weight: 500;
+  text-decoration: none;
+  text-shadow: 0 0 5px #ff00ff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------- */
+/* Resume Cards */
+.resume-card {
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px 0;
+  background: rgba(20, 20, 20, 0.95);
+  box-shadow: 0 0 10px #00fff7, 0 0 20px #ff00ff, 0 0 30px #00fff7;
+  transition: all 0.3s ease-in-out;
+}
+
+.resume-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #00fff7, 0 0 40px #ff00ff, 0 0 60px #00fff7;
+}
+
+/* Skill badges */
+.skill-badge {
+  display: inline-block;
+  margin: 5px 7px 5px 0;
+  padding: 7px 15px;
+  background: linear-gradient(90deg, #ff00ff, #00fff7);
+  color: #000;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  text-shadow: 0 0 5px #fff;
+}
+
+/* --------------------------- */
+/* Dark Mode Toggle */
+.dark-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(90deg, #ff00ff, #00fff7);
+  color: #000;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff00ff, 0 0 20px #00fff7;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.dark-toggle:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px #ff00ff, 0 0 40px #00fff7, 0 0 60px #ff00ff;
+}
+
+/* --------------------------- */
+/* PDF & Dashboard Buttons */
+.pdf-btn, .resume-btn {
+  margin: 5px 5px 5px 0;
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, #ff00ff, #00fff7);
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff00ff, 0 0 20px #00fff7;
+  transition: all 0.3s ease;
+}
+
+.pdf-btn:hover, .resume-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px #00fff7, 0 0 40px #ff00ff, 0 0 60px #00fff7;
+}
+
+/* --------------------------- */
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 25px;
+  }
+
+  input, textarea, button {
+    font-size: 15px;
+  }
+
+  .dark-toggle {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}
+
+
